@@ -12,7 +12,7 @@ docker run -p 8080:8080 -p 50000:50000 -d
 
 ##### Make Docker available in Jenkins container (mount docker runtime inside container as a volume)
 
-##### create jenkins container with mounted docker:
+##### Create jenkins container with mounted docker:
 docker run -p 8080:8080 -p 50000:50000 -d  \ 
 -v jenkins_home:/var/jenkins_home \
 -v var/run/docker.sock:/var/run/docker.sock \
@@ -44,3 +44,7 @@ Docker build . -t java-maven-app:1.0
 docker build  -t fomar123/my-rep:jma-1.0 .
 docker login -u $USERNAME -p $PASSWORD 
 docker push fomar123/my-rep:jma-1.0
+
+# Project: Pipeline Job
+##### Create a basic Pipeline Job
+##### Created a valid Jenkinsfile with required fields on git
