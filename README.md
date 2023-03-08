@@ -1,7 +1,6 @@
 # Jenkins Project 
 
-# Project 1:
-##### Install Jenkins on a digital ocean droplet
+# Project 1:Install Jenkins on a digital ocean droplet
 ##### Create a Server (Droplet) on DigitalOcean
 ##### Configure Firewall Rules to open port 22 and port 8080 for our new server
 ##### Install Docker on DigitalOcean Droplet
@@ -9,8 +8,7 @@
 docker run -p 8080:8080 -p 50000:50000 -d 
 -v jenkins_home:/var/jenkins_home(where the volume is mounted) jenkins/jenkins:lts (name of image and tag)
 
-# Project 2
-#####  Docker in Jenkins:
+# Project 2:Docker in Jenkins
 
 ##### Make Docker available in Jenkins container (mount docker runtime inside container as a volume)
 
