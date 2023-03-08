@@ -53,3 +53,5 @@ docker push fomar123/my-rep:jma-1.0
 
 # Project 5: Pipeline created in Jenkins using external groovy script 
 ##### Create a Jenkinsfile and a groovy script
+
+# Project 6: Pipeline created in Jenkins using input parameters
