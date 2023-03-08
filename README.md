@@ -45,8 +45,8 @@ docker build  -t fomar123/my-rep:jma-1.0 .
 docker login -u $USERNAME -p $PASSWORD 
 docker push fomar123/my-rep:jma-1.0
 
-# Project: Pipeline Job
+# Project 3: Pipeline Job
 ##### Create a basic Pipeline Job
 ##### Created a valid Jenkinsfile with required fields on git
 
-#Project: Pipeline creating in Jenkins using Parameters
+#Project 4: Pipeline creating in Jenkins using Parameters
