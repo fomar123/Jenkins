@@ -48,3 +48,5 @@ docker push fomar123/my-rep:jma-1.0
 # Project: Pipeline Job
 ##### Create a basic Pipeline Job
 ##### Created a valid Jenkinsfile with required fields on git
+
+#Project: Pipeline creating in Jenkins using Parameters
