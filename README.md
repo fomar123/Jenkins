@@ -55,3 +55,8 @@ docker push fomar123/my-rep:jma-1.0
 ##### Create a Jenkinsfile and a groovy script
 
 # Project 6: Pipeline created in Jenkins using input parameters
+
+# Project 7: Create full Pipeline with groovy script
+##### Build Jar
+##### Build Docker Image
+##### Push to private Repository DockerHub
