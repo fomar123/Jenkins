@@ -5,8 +5,11 @@
 ##### Configure Firewall Rules to open port 22 and port 8080 for our new server
 ##### Install Docker on DigitalOcean Droplet
 ##### Start Jenkins Docker container with named volume: 
-docker run -p 8080:8080 -p 50000:50000 -d 
--v jenkins_home:/var/jenkins_home(where the volume is mounted) jenkins/jenkins:lts (name of image and tag)
+
+      docker run -p 8080:8080 -p 50000:50000 -d -v 
+      jenkins_home:/var/jenkins_home -v/var/run/docker.sock:/var/run/docker.sock -v $(which docker):/usr/bin/docker 
+      jenkins/jenkins:lts
+
 
 # Project 2:Docker in Jenkins
 
