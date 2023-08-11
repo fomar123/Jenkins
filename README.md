@@ -83,9 +83,24 @@ Fixed permissions on docker.sock:
 Pull redis image:
 
         docker pull redis 
+<img width="399" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/7c5bfe2e-03d6-4a03-bba2-f2e99547617a">
 
+ Build Docker Image from Jar File:
+ - Add docker command in job configuration 
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/e7fda5a0-7f6c-49fa-8474-823b302bce1a">
 
+ - Check docker to see image has been pulled:
+ <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/ba86527d-4504-4b6d-b83c-9cb9ce2f5ae0">
 
+ Push Image to DockerHub:
+ - Create credentials for Docker
+   
+   <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/229e6547-2ed7-4a8c-a33d-33c1944c5af3">
+
+ - Add plugin to login into docker hub in binding section in Building Enviroment Section, add env variable
+ - Image pushed to DockerHub:
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/6be45cf0-7a9c-4d83-bf62-2e1d96ebba1d">
 
 # Project 3: Pipeline Job
 ##### Create a basic Pipeline Job
