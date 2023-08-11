@@ -3,14 +3,33 @@
 # Project 1:Install Jenkins on a digital ocean droplet
 ##### Create a Server (Droplet) on DigitalOcean
 ##### Configure Firewall Rules to open port 22 and port 8080 for our new server
-##### Install Docker on DigitalOcean Droplet
-##### Start Jenkins Docker container with named volume: 
+##### Installed Docker on DigitalOcean Droplet
+        apt update 
+        apt  install docker.io
+   
+##### Started Jenkins Docker container with named volume: 
 
       docker run -p 8080:8080 -p 50000:50000 -d -v 
       jenkins_home:/var/jenkins_home -v/var/run/docker.sock:/var/run/docker.sock -v $(which docker):/usr/bin/docker 
       jenkins/jenkins:lts
 
+##### Login into Jenkins into and get password to access Jenkins UI
+        docker exec -it 82fc4b4c68f8 bash \
+        jenkins@82fc4b4c68f8:/$ cat /var/jenkins_home/secrets/initialAdminPassword
 
+##### Installed Build Tools:
+Configured Plugin for Maven
+Installed npm and node in Jenkins container from CLI:
+ - Login as root user:
+   
+        docker exec -u 0 -it 82fc4b4c68f8 bash
+
+        apt update
+        apt install curl
+        curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh 
+        bash nodesource_setup.sh
+        apt install nodejs
+     
 # Project 2:Docker in Jenkins
 
 ##### Make Docker available in Jenkins container (mount docker runtime inside container as a volume)
