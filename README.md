@@ -102,18 +102,11 @@ Pull redis image:
 
 <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/6be45cf0-7a9c-4d83-bf62-2e1d96ebba1d">
 
-# Project 3: Pipeline Job
-##### Create a basic Pipeline Job
-##### Created a valid Jenkinsfile with required fields on git
+# Create a basic Pipeline Job:
+##### Configured Git Repository:
+- Add git branch 
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/e2b08117-12d8-423f-aa60-0542f0035879">
 
-# Project 4: Pipeline creating in Jenkins using Parameters
-
-# Project 5: Pipeline created in Jenkins using external groovy script 
-##### Create a Jenkinsfile and a groovy script
-
-# Project 6: Pipeline created in Jenkins using input parameters
-
-# Project 7: Create full Pipeline with groovy script
-##### Build Jar
-##### Build Docker Image
-##### Push to private Repository DockerHub
+##### Created a valid Jenkinsfile with required fields:
+- Execute Build Now
+<img width="285" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/048e8879-1294-44a5-8d01-4440857ef1a9">
