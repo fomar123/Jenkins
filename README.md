@@ -145,3 +145,16 @@ Pull redis image:
 - Build will be paused until user inputs a value
 
  <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/538731bc-9497-448e-9b75-500a73486ff4">
+
+
+# Create full Pipeline
+##### Define maven installation in Jenkinsfile
+##### Build Jar
+##### Build Docker Image
+##### Push to private Repository DockerHub
+##### Use groovy script to extract commands
+##### Execute build now:
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/d6a450b0-081a-4c80-afc3-9b617963b9fb">
+
+##### Image pushed to Dockerhub:
+<img width="365" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/8155577a-07b3-4325-b629-164475474b5f">
