@@ -110,3 +110,38 @@ Pull redis image:
 ##### Created a valid Jenkinsfile with required fields:
 - Execute Build Now
 <img width="285" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/048e8879-1294-44a5-8d01-4440857ef1a9">
+
+
+# Jenkinsfile Syntax
+
+##### Used Post attribute❏
+##### Defined a Condition:
+- Define boolean expression and check which branch your on
+##### Used an environment variable:
+- To check environmental variable go to path /env-vars.html
+- Define server credentials to connect to the  development server to build artifact
+##### Used Tools Attribute:
+- Provides build tools for your project 
+- Jenkins support build tools like gradle, maven and jdk
+##### Used a Parameter:
+- Used Parameters to pass data in Pipeline job 
+- Parameter type use: Boolean and String 
+- Execute Parameter:
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/8d5aa01a-b1df-4a8c-81c5-452a2c4267b3">
+
+##### Used an external Groovy Script	
+- Groovy is a very powerful language which offers the ability to do practically anything Java can do including: Create sub-processes and execute arbitrary commands on the Jenkins controller and agents.
+- Write groovy script and include it in the Jenkinsfile 
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/5213d13c-c7c7-4909-bfbb-b1d9a35592d3">
+
+##### Used an Input Parameter
+- Paramtise build to make it more reusable 
+- Allows the user to interact and control the flow of the build.
+- Use input in your script and assign it to a variable
+- You can use string , choice or BooleanParam
+- You can choose which environment you want to build, e.g dev, staging or prod
+<img width="413" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/7e98e9b5-090e-49ac-a6f5-8e000d3b5858">
+
+- Build will be paused until user inputs a value
+
+ <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/538731bc-9497-448e-9b75-500a73486ff4">
