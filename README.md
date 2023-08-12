@@ -182,5 +182,59 @@ Pull redis image:
 
 <img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/019f0f54-44bf-451b-a687-569b8cf807f1">
 
+# Versioning your application - Part 1
+
+#####  Increment version locally with maven build tool:
+• Execute command:
+
+       mvn build-helper:parse-version versions:set 
+      -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion} versions:commit]
+
+<img width="351" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/7ef3f359-15ff-4e67-a766-b87e29658b62">
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/72abcff3-dfc1-4034-9308-e6d36e76a1a6">
+
+##### Increment version in Jenkins Pipeline
+• add increment version stage
+
+##### Configured Jenkinsfile to increment version
+	
+##### Adjusted Dockerfile file
+• make the jar file dyamic and not harcoded:
+
+<img width="414" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/a05a8903-fd41-448b-ab92-405bb186a217">
+
+##### Executed Jenkins Pipeline:
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/40bd50f7-a13c-4608-8e76-35c915027613">
+
+##### New Version of Jar File:
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/aa321a28-777f-4c67-afc6-ddaea9eab52b">
+
+##### Docker Image pushed to DockerHub
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/67a4b013-d2c9-451a-abd0-b3c80894cf2d">
 
 
+# Versioning your application - Part 2
+
+##### Commit version upgrade from Jenkins to Git
+- added a stage to commit version update in Jenkinsfile
+- added git credentials in Jenkinsfile to access gitlab
+- used the sh command to execute commands for git 
+
+##### Pipelin executed with version update:
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/6c554525-beb7-4c8e-af4f-4c0b37a4d7db">
+
+##### New version incremented from snapshop:
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/3c5e9b4f-f009-440f-bf6b-24b87b774c92">
+
+##### Ignore Jenkins Commit from Triggering Pipeline:
+To prevent an endless loop of commit and pipeline triggering:
+  
+  • Install a plugin called Ignore Commiter Strategy
+  
+  • Configure the plugin in the pipeline in build strategies 
