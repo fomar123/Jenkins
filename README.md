@@ -158,3 +158,29 @@ Pull redis image:
 
 ##### Image pushed to Dockerhub:
 <img width="365" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/8155577a-07b3-4325-b629-164475474b5f">
+
+
+#  Automatically Trigger Jenkins Jobs - Webhooks
+##### Installed gitlab plugin 
+##### Created an access token for you gitlab API
+##### Intergrate Jenkins in Gitlab: adds the URL of Jenkins and project name 
+##### Test the configuration to see if the connect between gitlab and Jenkins works:
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/619b6c9c-5f6a-4b8f-bb50-124ed7803bc1">
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/d627353f-f158-496b-9424-34a34a83b9cf">
+
+##### Configure Automatic Triggering of Jenkins Jobs for Multi-Branch Pipeline:
+• Install Multi-branch webhook trigger plugin
+• Add Scan by webhook 
+• Open Webhooks in gitab: It'll send Jenkins a notification specific URL using the token specified. When Jenkins receive the token It'll check the token and trigger the multi-branch pipeline which has scan by webhook configured
+
+• Copy token in webhook URL
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/65ad75bb-74b4-4bef-9333-11fce5c665f3">
+
+• Webhook will automatically send events to your branch
+
+<img width="452" alt="image" src="https://github.com/fomar123/Jenkins/assets/90075757/019f0f54-44bf-451b-a687-569b8cf807f1">
+
+
+
